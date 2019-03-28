@@ -1,0 +1,261 @@
+MUTANT 1:	BLM index.js Line 71:	`return createBuilder(this, this._styles || [], true);` > `return createBuilder(this, this._styles || [], false);'`
+MUTANT 2:	BLM index.js Line 128:	`enumerable: true,` > `enumerable: false,'`
+MUTANT 3:	BLM index.js Line 138:	`enumerable: true,` > `enumerable: false,'`
+MUTANT 4:	CBM index.js Line 21:	`if (options.level > 3 || options.level < 0) {` > `if (options.level >= 3 || options.level < 0) {'`
+MUTANT 5:	CBM index.js Line 21:	`if (options.level > 3 || options.level < 0) {` > `if (options.level > 3 || options.level <= 0) {'`
+MUTANT 6:	CBM index.js Line 28:	`object.enabled = 'enabled' in options ? options.enabled : object.level > 0;` > `object.enabled = 'enabled' in options ? options.enabled : object.level >= 0;'`
+MUTANT 7:	CBM index.js Line 157:	`if (!self.enabled || self.level <= 0 || !string) {` > `if (!self.enabled || self.level < 0 || !string) {'`
+MUTANT 8:	CBM index.js Line 188:	`for (let i = 1; i < firstString.length; i++) {` > `for (let i = 1; i <= firstString.length; i++) {'`
+MUTANT 9:	IM index.js Line 188:	`for (let i = 1; i < firstString.length; i++) {` > `for (let i = 1; i < firstString.length; i--) {'`
+MUTANT 10:	MM index.js Line 103:	`const bgModel = 'bg' + model[0].toUpperCase() + model.slice(1);` > `const bgModel = 'bg' + model[0].toUpperCase() - model.slice(1);'`
+MUTANT 11:	MM index.js Line 103:	`const bgModel = 'bg' + model[0].toUpperCase() + model.slice(1);` > `const bgModel = 'bg' - model[0].toUpperCase() + model.slice(1);'`
+MUTANT 12:	MM index.js Line 165:	`string = code.open + string.replace(code.closeRe, code.open) + code.close;` > `string = code.open + string.replace(code.closeRe, code.open) - code.close;'`
+MUTANT 13:	MM index.js Line 165:	`string = code.open + string.replace(code.closeRe, code.open) + code.close;` > `string = code.open - string.replace(code.closeRe, code.open) + code.close;'`
+MUTANT 14:	MM index.js Line 190:	`String(arguments_[i - 1]).replace(/[{}\\]/g, '\\$&'),` > `String(arguments_[i + 1]).replace(/[{}\\]/g, '\\$&'),'`
+MUTANT 15:	NCM index.js Line 21:	`if (options.level > 3 || options.level < 0) {` > `if (options.level <= 3 || options.level < 0) {'`
+MUTANT 16:	NCM index.js Line 21:	`if (options.level > 3 || options.level < 0) {` > `if (options.level > 3 || options.level >= 0) {'`
+MUTANT 17:	NCM index.js Line 27:	`object.level = options.level === undefined ? colorLevel : options.level;` > `object.level = options.level !== undefined ? colorLevel : options.level;'`
+MUTANT 18:	NCM index.js Line 28:	`object.enabled = 'enabled' in options ? options.enabled : object.level > 0;` > `object.enabled = 'enabled' in options ? options.enabled : object.level <= 0;'`
+MUTANT 19:	NCM index.js Line 157:	`if (!self.enabled || self.level <= 0 || !string) {` > `if (!self.enabled || self.level > 0 || !string) {'`
+MUTANT 20:	NCM index.js Line 188:	`for (let i = 1; i < firstString.length; i++) {` > `for (let i = 1; i >= firstString.length; i++) {'`
+MUTANT 21:	NLM index.js Line 21:	`if (options.level > 3 || options.level < 0) {` > `if (options.level > 0 || options.level < 0) {'`
+MUTANT 22:	NLM index.js Line 21:	`if (options.level > 3 || options.level < 0) {` > `if (options.level > 2 || options.level < 0) {'`
+MUTANT 23:	NLM index.js Line 21:	`if (options.level > 3 || options.level < 0) {` > `if (options.level > 4 || options.level < 0) {'`
+MUTANT 24:	NLM index.js Line 21:	`if (options.level > 3 || options.level < 0) {` > `if (options.level > 307094 || options.level < 0) {'`
+MUTANT 25:	NLM index.js Line 21:	`if (options.level > 3 || options.level < 0) {` > `if (options.level > 3 || options.level < -1) {'`
+MUTANT 26:	NLM index.js Line 21:	`if (options.level > 3 || options.level < 0) {` > `if (options.level > 3 || options.level < 1) {'`
+MUTANT 27:	NLM index.js Line 21:	`if (options.level > 3 || options.level < 0) {` > `if (options.level > 3 || options.level < 660084) {'`
+MUTANT 28:	NLM index.js Line 26:	`const colorLevel = stdoutColor ? stdoutColor.level : 0;` > `const colorLevel = stdoutColor ? stdoutColor.level : -1;'`
+MUTANT 29:	NLM index.js Line 26:	`const colorLevel = stdoutColor ? stdoutColor.level : 0;` > `const colorLevel = stdoutColor ? stdoutColor.level : 1;'`
+MUTANT 30:	NLM index.js Line 26:	`const colorLevel = stdoutColor ? stdoutColor.level : 0;` > `const colorLevel = stdoutColor ? stdoutColor.level : 727222;'`
+MUTANT 31:	NLM index.js Line 28:	`object.enabled = 'enabled' in options ? options.enabled : object.level > 0;` > `object.enabled = 'enabled' in options ? options.enabled : object.level > -1;'`
+MUTANT 32:	NLM index.js Line 28:	`object.enabled = 'enabled' in options ? options.enabled : object.level > 0;` > `object.enabled = 'enabled' in options ? options.enabled : object.level > 1;'`
+MUTANT 33:	NLM index.js Line 28:	`object.enabled = 'enabled' in options ? options.enabled : object.level > 0;` > `object.enabled = 'enabled' in options ? options.enabled : object.level > 776237;'`
+MUTANT 34:	NLM index.js Line 103:	`const bgModel = 'bg' + model[0].toUpperCase() + model.slice(1);` > `const bgModel = 'bg' + model[-1].toUpperCase() + model.slice(1);'`
+MUTANT 35:	NLM index.js Line 103:	`const bgModel = 'bg' + model[0].toUpperCase() + model.slice(1);` > `const bgModel = 'bg' + model[1].toUpperCase() + model.slice(1);'`
+MUTANT 36:	NLM index.js Line 103:	`const bgModel = 'bg' + model[0].toUpperCase() + model.slice(1);` > `const bgModel = 'bg' + model[755912].toUpperCase() + model.slice(1);'`
+MUTANT 37:	NLM index.js Line 103:	`const bgModel = 'bg' + model[0].toUpperCase() + model.slice(1);` > `const bgModel = 'bg' + model[0].toUpperCase() + model.slice(0);'`
+MUTANT 38:	NLM index.js Line 103:	`const bgModel = 'bg' + model[0].toUpperCase() + model.slice(1);` > `const bgModel = 'bg' + model[0].toUpperCase() + model.slice(2);'`
+MUTANT 39:	NLM index.js Line 103:	`const bgModel = 'bg' + model[0].toUpperCase() + model.slice(1);` > `const bgModel = 'bg' + model[0].toUpperCase() + model.slice(176632);'`
+MUTANT 40:	NLM index.js Line 157:	`if (!self.enabled || self.level <= 0 || !string) {` > `if (!self.enabled || self.level <= -1 || !string) {'`
+MUTANT 41:	NLM index.js Line 157:	`if (!self.enabled || self.level <= 0 || !string) {` > `if (!self.enabled || self.level <= 1 || !string) {'`
+MUTANT 42:	NLM index.js Line 157:	`if (!self.enabled || self.level <= 0 || !string) {` > `if (!self.enabled || self.level <= 524971 || !string) {'`
+MUTANT 43:	NLM index.js Line 185:	`const arguments_ = strings.slice(1);` > `const arguments_ = strings.slice(0);'`
+MUTANT 44:	NLM index.js Line 185:	`const arguments_ = strings.slice(1);` > `const arguments_ = strings.slice(2);'`
+MUTANT 45:	NLM index.js Line 185:	`const arguments_ = strings.slice(1);` > `const arguments_ = strings.slice(637040);'`
+MUTANT 46:	NLM index.js Line 186:	`const parts = [firstString.raw[0]];` > `const parts = [firstString.raw[-1]];'`
+MUTANT 47:	NLM index.js Line 186:	`const parts = [firstString.raw[0]];` > `const parts = [firstString.raw[1]];'`
+MUTANT 48:	NLM index.js Line 186:	`const parts = [firstString.raw[0]];` > `const parts = [firstString.raw[874898]];'`
+MUTANT 49:	NLM index.js Line 188:	`for (let i = 1; i < firstString.length; i++) {` > `for (let i = 0; i < firstString.length; i++) {'`
+MUTANT 50:	NLM index.js Line 188:	`for (let i = 1; i < firstString.length; i++) {` > `for (let i = 2; i < firstString.length; i++) {'`
+MUTANT 51:	NLM index.js Line 188:	`for (let i = 1; i < firstString.length; i++) {` > `for (let i = 850585; i < firstString.length; i++) {'`
+MUTANT 52:	NLM index.js Line 190:	`String(arguments_[i - 1]).replace(/[{}\\]/g, '\\$&'),` > `String(arguments_[i - 0]).replace(/[{}\\]/g, '\\$&'),'`
+MUTANT 53:	NLM index.js Line 190:	`String(arguments_[i - 1]).replace(/[{}\\]/g, '\\$&'),` > `String(arguments_[i - 2]).replace(/[{}\\]/g, '\\$&'),'`
+MUTANT 54:	NLM index.js Line 190:	`String(arguments_[i - 1]).replace(/[{}\\]/g, '\\$&'),` > `String(arguments_[i - 215256]).replace(/[{}\\]/g, '\\$&'),'`
+MUTANT 55:	RAEM index.js Line 9:	`'ansi',` > `'`
+MUTANT 56:	RAEM index.js Line 10:	`'ansi',` > `'`
+MUTANT 57:	RAEM index.js Line 11:	`'ansi256',` > `'`
+MUTANT 58:	RAEM index.js Line 12:	`'ansi16m'` > `'`
+MUTANT 59:	RAEM index.js Line 16:	`const skipModels = new Set(['gray']);` > `const skipModels = new Set([]);'`
+MUTANT 60:	RAEM index.js Line 64:	`return createBuilder(this, [...(this._styles || []), style], this._isEmpty);` > `return createBuilder(this, [style], this._isEmpty);'`
+MUTANT 61:	RAEM index.js Line 64:	`return createBuilder(this, [...(this._styles || []), style], this._isEmpty);` > `return createBuilder(this, [...(this._styles || [])], this._isEmpty);'`
+MUTANT 62:	RAEM index.js Line 91:	`return createBuilder(this, [...(this._styles || []), codes], this._isEmpty);` > `return createBuilder(this, [codes], this._isEmpty);'`
+MUTANT 63:	RAEM index.js Line 91:	`return createBuilder(this, [...(this._styles || []), codes], this._isEmpty);` > `return createBuilder(this, [...(this._styles || [])], this._isEmpty);'`
+MUTANT 64:	RAEM index.js Line 114:	`return createBuilder(this, [...(this._styles || []), codes], this._isEmpty);` > `return createBuilder(this, [codes], this._isEmpty);'`
+MUTANT 65:	RAEM index.js Line 114:	`return createBuilder(this, [...(this._styles || []), codes], this._isEmpty);` > `return createBuilder(this, [...(this._styles || [])], this._isEmpty);'`
+MUTANT 66:	RAEM index.js Line 186:	`const parts = [firstString.raw[0]];` > `const parts = [];'`
+MUTANT 67:	RCM index.js Line 27:	`object.level = options.level === undefined ? colorLevel : options.level;` > `object.level = true ? colorLevel : options.level;'`
+MUTANT 68:	RCM index.js Line 27:	`object.level = options.level === undefined ? colorLevel : options.level;` > `object.level = false ? colorLevel : options.level;'`
+MUTANT 69:	RFCAM index.js Line 2:	`const escapeStringRegexp = require('escape-string-regexp');` > `const escapeStringRegexp = require();'`
+MUTANT 70:	RFCAM index.js Line 3:	`const ansiStyles = require('ansi-styles');` > `const ansiStyles = require();'`
+MUTANT 71:	RFCAM index.js Line 4:	`const {stdout: stdoutColor} = require('supports-color');` > `const {stdout: stdoutColor} = require();'`
+MUTANT 72:	RFCAM index.js Line 5:	`const template = require('./templates.js');` > `const template = require();'`
+MUTANT 73:	RFCAM index.js Line 18:	`const styles = Object.create(null);` > `const styles = Object.create();'`
+MUTANT 74:	RFCAM index.js Line 33:	`return chalkFactory(options);` > `return chalkFactory();'`
+MUTANT 75:	RFCAM index.js Line 39:	`applyOptions(chalk, options);` > `applyOptions(options);'`
+MUTANT 76:	RFCAM index.js Line 39:	`applyOptions(chalk, options);` > `applyOptions(chalk);'`
+MUTANT 77:	RFCAM index.js Line 41:	`chalk.template = (...arguments_) => chalkTag(chalk.template, ...arguments_);` > `chalk.template = (...arguments_) => chalkTag(...arguments_);'`
+MUTANT 78:	RFCAM index.js Line 41:	`chalk.template = (...arguments_) => chalkTag(chalk.template, ...arguments_);` > `chalk.template = (...arguments_) => chalkTag(chalk.template);'`
+MUTANT 79:	RFCAM index.js Line 43:	`Object.setPrototypeOf(chalk, Chalk.prototype);` > `Object.setPrototypeOf(Chalk.prototype);'`
+MUTANT 80:	RFCAM index.js Line 43:	`Object.setPrototypeOf(chalk, Chalk.prototype);` > `Object.setPrototypeOf(chalk);'`
+MUTANT 81:	RFCAM index.js Line 44:	`Object.setPrototypeOf(chalk.template, chalk);` > `Object.setPrototypeOf(chalk);'`
+MUTANT 82:	RFCAM index.js Line 44:	`Object.setPrototypeOf(chalk.template, chalk);` > `Object.setPrototypeOf(chalk.template);'`
+MUTANT 83:	RFCAM index.js Line 56:	`return chalkFactory(options);` > `return chalkFactory();'`
+MUTANT 84:	RFCAM index.js Line 59:	`for (const [styleName, style] of Object.entries(ansiStyles)) {` > `for (const [styleName, style] of Object.entries()) {'`
+MUTANT 85:	RFCAM index.js Line 60:	`style.closeRe = new RegExp(escapeStringRegexp(style.close), 'g');` > `style.closeRe = new RegExp(escapeStringRegexp(), 'g');'`
+MUTANT 86:	RFCAM index.js Line 64:	`return createBuilder(this, [...(this._styles || []), style], this._isEmpty);` > `return createBuilder([...(this._styles || []), style], this._isEmpty);'`
+MUTANT 87:	RFCAM index.js Line 64:	`return createBuilder(this, [...(this._styles || []), style], this._isEmpty);` > `return createBuilder(this, this._isEmpty);'`
+MUTANT 88:	RFCAM index.js Line 64:	`return createBuilder(this, [...(this._styles || []), style], this._isEmpty);` > `return createBuilder(this, [...(this._styles || []), style]);'`
+MUTANT 89:	RFCAM index.js Line 71:	`return createBuilder(this, this._styles || [], true);` > `return createBuilder(this._styles || [], true);'`
+MUTANT 90:	RFCAM index.js Line 71:	`return createBuilder(this, this._styles || [], true);` > `return createBuilder(this, true);'`
+MUTANT 91:	RFCAM index.js Line 71:	`return createBuilder(this, this._styles || [], true);` > `return createBuilder(this, this._styles || []);'`
+MUTANT 92:	RFCAM index.js Line 75:	`ansiStyles.color.closeRe = new RegExp(escapeStringRegexp(ansiStyles.color.close), 'g');` > `ansiStyles.color.closeRe = new RegExp(escapeStringRegexp(), 'g');'`
+MUTANT 93:	RFCAM index.js Line 76:	`for (const model of Object.keys(ansiStyles.color.ansi)) {` > `for (const model of Object.keys()) {'`
+MUTANT 94:	RFCAM index.js Line 77:	`if (skipModels.has(model)) {` > `if (skipModels.has()) {'`
+MUTANT 95:	RFCAM index.js Line 85:	`const open = ansiStyles.color[levelMapping[level]][model](...arguments_);` > `const open = ansiStyles.color[levelMapping[level]][model]();'`
+MUTANT 96:	RFCAM index.js Line 91:	`return createBuilder(this, [...(this._styles || []), codes], this._isEmpty);` > `return createBuilder([...(this._styles || []), codes], this._isEmpty);'`
+MUTANT 97:	RFCAM index.js Line 91:	`return createBuilder(this, [...(this._styles || []), codes], this._isEmpty);` > `return createBuilder(this, this._isEmpty);'`
+MUTANT 98:	RFCAM index.js Line 91:	`return createBuilder(this, [...(this._styles || []), codes], this._isEmpty);` > `return createBuilder(this, [...(this._styles || []), codes]);'`
+MUTANT 99:	RFCAM index.js Line 97:	`ansiStyles.bgColor.closeRe = new RegExp(escapeStringRegexp(ansiStyles.bgColor.close), 'g');` > `ansiStyles.bgColor.closeRe = new RegExp(escapeStringRegexp(), 'g');'`
+MUTANT 100:	RFCAM index.js Line 98:	`for (const model of Object.keys(ansiStyles.bgColor.ansi)) {` > `for (const model of Object.keys()) {'`
+MUTANT 101:	RFCAM index.js Line 99:	`if (skipModels.has(model)) {` > `if (skipModels.has()) {'`
+MUTANT 102:	RFCAM index.js Line 103:	`const bgModel = 'bg' + model[0].toUpperCase() + model.slice(1);` > `const bgModel = 'bg' + model[0].toUpperCase() + model.slice();'`
+MUTANT 103:	RFCAM index.js Line 108:	`const open = ansiStyles.bgColor[levelMapping[level]][model](...arguments_);` > `const open = ansiStyles.bgColor[levelMapping[level]][model]();'`
+MUTANT 104:	RFCAM index.js Line 114:	`return createBuilder(this, [...(this._styles || []), codes], this._isEmpty);` > `return createBuilder([...(this._styles || []), codes], this._isEmpty);'`
+MUTANT 105:	RFCAM index.js Line 114:	`return createBuilder(this, [...(this._styles || []), codes], this._isEmpty);` > `return createBuilder(this, this._isEmpty);'`
+MUTANT 106:	RFCAM index.js Line 114:	`return createBuilder(this, [...(this._styles || []), codes], this._isEmpty);` > `return createBuilder(this, [...(this._styles || []), codes]);'`
+MUTANT 107:	RFCAM index.js Line 120:	`const proto = Object.defineProperties(() => {}, styles);` > `const proto = Object.defineProperties(styles);'`
+MUTANT 108:	RFCAM index.js Line 120:	`const proto = Object.defineProperties(() => {}, styles);` > `const proto = Object.defineProperties(() => {});'`
+MUTANT 109:	RFCAM index.js Line 123:	`const builder = (...arguments_) => applyStyle(builder, ...arguments_);` > `const builder = (...arguments_) => applyStyle(...arguments_);'`
+MUTANT 110:	RFCAM index.js Line 123:	`const builder = (...arguments_) => applyStyle(builder, ...arguments_);` > `const builder = (...arguments_) => applyStyle(builder);'`
+MUTANT 111:	RFCAM index.js Line 127:	`Object.defineProperty(builder, 'level', {` > `Object.defineProperty('level', {'`
+MUTANT 112:	RFCAM index.js Line 127:	`Object.defineProperty(builder, 'level', {` > `Object.defineProperty(builder, {'`
+MUTANT 113:	RFCAM index.js Line 127:	`Object.defineProperty(builder, 'level', {` > `Object.defineProperty(builder, 'level'bject.defineProperty(builder, 'level', {'`
+MUTANT 114:	RFCAM index.js Line 137:	`Object.defineProperty(builder, 'enabled', {` > `Object.defineProperty('enabled', {'`
+MUTANT 115:	RFCAM index.js Line 137:	`Object.defineProperty(builder, 'enabled', {` > `Object.defineProperty(builder, {'`
+MUTANT 116:	RFCAM index.js Line 137:	`Object.defineProperty(builder, 'enabled', {` > `Object.defineProperty(builder, 'enabled'bject.defineProperty(builder, 'enabled', {'`
+MUTANT 117:	RFCAM index.js Line 155:	`let string = arguments_.join(' ');` > `let string = arguments_.join();'`
+MUTANT 118:	RFCAM index.js Line 165:	`string = code.open + string.replace(code.closeRe, code.open) + code.close;` > `string = code.open + string.replace(code.open) + code.close;'`
+MUTANT 119:	RFCAM index.js Line 165:	`string = code.open + string.replace(code.closeRe, code.open) + code.close;` > `string = code.open + string.replace(code.closeRe) + code.close;'`
+MUTANT 120:	RFCAM index.js Line 170:	`string = string.replace(/\r?\n/g, `${code.close}$&${code.open}`);` > `string = string.replace(`${code.close}$&${code.open}`);'`
+MUTANT 121:	RFCAM index.js Line 170:	`string = string.replace(/\r?\n/g, `${code.close}$&${code.open}`);` > `string = string.replace(/\r?\n/g);'`
+MUTANT 122:	RFCAM index.js Line 179:	`if (!Array.isArray(firstString)) {` > `if (!Array.isArray()) {'`
+MUTANT 123:	RFCAM index.js Line 182:	`return strings.join(' ');` > `return strings.join();'`
+MUTANT 124:	RFCAM index.js Line 185:	`const arguments_ = strings.slice(1);` > `const arguments_ = strings.slice();'`
+MUTANT 125:	RFCAM index.js Line 190:	`String(arguments_[i - 1]).replace(/[{}\\]/g, '\\$&'),` > `'`
+MUTANT 126:	RFCAM index.js Line 191:	`String(firstString.raw[i])` > `'`
+MUTANT 127:	RFCAM index.js Line 190:	`String(arguments_[i - 1]).replace(/[{}\\]/g, '\\$&'),` > `String(arguments_[i - 1]).replace('\\$&'),'`
+MUTANT 128:	RFCAM index.js Line 190:	`String(arguments_[i - 1]).replace(/[{}\\]/g, '\\$&'),` > `String(arguments_[i - 1]).replace(/[{}\\]/g),'`
+MUTANT 129:	RFCAM index.js Line 190:	`String(arguments_[i - 1]).replace(/[{}\\]/g, '\\$&'),` > `String().replace(/[{}\\]/g, '\\$&'),'`
+MUTANT 130:	RFCAM index.js Line 191:	`String(firstString.raw[i])` > `String()'`
+MUTANT 131:	RFCAM index.js Line 195:	`return template(chalk, parts.join(''));` > `return template(parts.join(''));'`
+MUTANT 132:	RFCAM index.js Line 195:	`return template(chalk, parts.join(''));` > `return template(chalk);'`
+MUTANT 133:	RFCAM index.js Line 195:	`return template(chalk, parts.join(''));` > `return template(chalk, parts.join());'`
+MUTANT 134:	RFCAM index.js Line 198:	`Object.defineProperties(Chalk.prototype, styles);` > `Object.defineProperties(styles);'`
+MUTANT 135:	RFCAM index.js Line 198:	`Object.defineProperties(Chalk.prototype, styles);` > `Object.defineProperties(Chalk.prototype);'`
+MUTANT 136:	RFDPM index.js Line 55:	`function Chalk(options) {` > `function Chalk() {'`
+MUTANT 137:	RFM Lines 20-29: Commented function (anonymous / assigned)
+MUTANT 138:	RFM Lines 32-34: Commented function constructor
+MUTANT 139:	RFM Lines 37-53: Commented function (anonymous / assigned)
+MUTANT 140:	RFM Lines 41-41: Commented function (anonymous / assigned)
+MUTANT 141:	RFM Lines 46-48: Commented function (anonymous / assigned)
+MUTANT 142:	RFM Lines 55-57: Commented function Chalk
+MUTANT 143:	RFM Lines 63-65: Commented function get
+MUTANT 144:	RFM Lines 70-72: Commented function get
+MUTANT 145:	RFM Lines 82-93: Commented function get
+MUTANT 146:	RFM Lines 84-92: Commented function (anonymous / assigned)
+MUTANT 147:	RFM Lines 105-116: Commented function get
+MUTANT 148:	RFM Lines 107-115: Commented function (anonymous / assigned)
+MUTANT 149:	RFM Lines 120-120: Commented function (anonymous / assigned)
+MUTANT 150:	RFM Lines 122-152: Commented function (anonymous / assigned)
+MUTANT 151:	RFM Lines 123-123: Commented function (anonymous / assigned)
+MUTANT 152:	RFM Lines 129-131: Commented function get
+MUTANT 153:	RFM Lines 132-134: Commented function set
+MUTANT 154:	RFM Lines 139-141: Commented function get
+MUTANT 155:	RFM Lines 142-144: Commented function set
+MUTANT 156:	RFM Lines 154-174: Commented function (anonymous / assigned)
+MUTANT 157:	RFM Lines 176-196: Commented function (anonymous / assigned)
+MUTANT 158:	RLM Commented line 2:	const escapeStringRegexp = require('escape-string-regexp');
+MUTANT 159:	RLM Commented line 3:	const ansiStyles = require('ansi-styles');
+MUTANT 160:	RLM Commented line 4:	const {stdout: stdoutColor} = require('supports-color');
+MUTANT 161:	RLM Commented line 5:	const template = require('./templates.js');
+MUTANT 162:	RLM Commented line 16:	const skipModels = new Set(['gray']);
+MUTANT 163:	RLM Commented line 18:	const styles = Object.create(null);
+MUTANT 164:	RLM Commented line 22:	throw new Error('The `level` option should be an integer from 0 to 3');
+MUTANT 165:	RLM Commented line 26:	const colorLevel = stdoutColor ? stdoutColor.level : 0;
+MUTANT 166:	RLM Commented line 27:	object.level = options.level === undefined ? colorLevel : options.level;
+MUTANT 167:	RLM Commented line 28:	object.enabled = 'enabled' in options ? options.enabled : object.level > 0;
+MUTANT 168:	RLM Commented line 33:	return chalkFactory(options);
+MUTANT 169:	RLM Commented line 38:	const chalk = {};
+MUTANT 170:	RLM Commented line 39:	applyOptions(chalk, options);
+MUTANT 171:	RLM Commented line 41:	chalk.template = (...arguments_) => chalkTag(chalk.template, ...arguments_);
+MUTANT 172:	RLM Commented line 43:	Object.setPrototypeOf(chalk, Chalk.prototype);
+MUTANT 173:	RLM Commented line 44:	Object.setPrototypeOf(chalk.template, chalk);
+MUTANT 174:	RLM Commented line 47:	throw new Error('`chalk.constructor()` is deprecated. Use `new chalk.Instance()` instead.');
+MUTANT 175:	RLM Commented line 50:	chalk.template.Instance = ChalkClass;
+MUTANT 176:	RLM Commented line 52:	return chalk.template;
+MUTANT 177:	RLM Commented line 56:	return chalkFactory(options);
+MUTANT 178:	RLM Commented line 60:	style.closeRe = new RegExp(escapeStringRegexp(style.close), 'g');
+MUTANT 179:	RLM Commented line 64:	return createBuilder(this, [...(this._styles || []), style], this._isEmpty);
+MUTANT 180:	RLM Commented line 71:	return createBuilder(this, this._styles || [], true);
+MUTANT 181:	RLM Commented line 75:	ansiStyles.color.closeRe = new RegExp(escapeStringRegexp(ansiStyles.color.close), 'g');
+MUTANT 182:	RLM Commented line 78:	continue;
+MUTANT 183:	RLM Commented line 83:	const {level} = this;
+MUTANT 184:	RLM Commented line 85:	const open = ansiStyles.color[levelMapping[level]][model](...arguments_);
+MUTANT 185:	RLM Commented line 91:	return createBuilder(this, [...(this._styles || []), codes], this._isEmpty);
+MUTANT 186:	RLM Commented line 97:	ansiStyles.bgColor.closeRe = new RegExp(escapeStringRegexp(ansiStyles.bgColor.close), 'g');
+MUTANT 187:	RLM Commented line 100:	continue;
+MUTANT 188:	RLM Commented line 103:	const bgModel = 'bg' + model[0].toUpperCase() + model.slice(1);
+MUTANT 189:	RLM Commented line 106:	const {level} = this;
+MUTANT 190:	RLM Commented line 108:	const open = ansiStyles.bgColor[levelMapping[level]][model](...arguments_);
+MUTANT 191:	RLM Commented line 114:	return createBuilder(this, [...(this._styles || []), codes], this._isEmpty);
+MUTANT 192:	RLM Commented line 120:	const proto = Object.defineProperties(() => {}, styles);
+MUTANT 193:	RLM Commented line 123:	const builder = (...arguments_) => applyStyle(builder, ...arguments_);
+MUTANT 194:	RLM Commented line 124:	builder._styles = _styles;
+MUTANT 195:	RLM Commented line 125:	builder._isEmpty = _isEmpty;
+MUTANT 196:	RLM Commented line 130:	return self.level;
+MUTANT 197:	RLM Commented line 133:	self.level = level;
+MUTANT 198:	RLM Commented line 140:	return self.enabled;
+MUTANT 199:	RLM Commented line 143:	self.enabled = enabled;
+MUTANT 200:	RLM Commented line 149:	builder.__proto__ = proto; // eslint-disable-line no-proto
+MUTANT 201:	RLM Commented line 151:	return builder;
+MUTANT 202:	RLM Commented line 155:	let string = arguments_.join(' ');
+MUTANT 203:	RLM Commented line 158:	return self._isEmpty ? '' : string;
+MUTANT 204:	RLM Commented line 165:	string = code.open + string.replace(code.closeRe, code.open) + code.close;
+MUTANT 205:	RLM Commented line 170:	string = string.replace(/\r?\n/g, `${code.close}$&${code.open}`);
+MUTANT 206:	RLM Commented line 173:	return string;
+MUTANT 207:	RLM Commented line 177:	const [firstString] = strings;
+MUTANT 208:	RLM Commented line 182:	return strings.join(' ');
+MUTANT 209:	RLM Commented line 185:	const arguments_ = strings.slice(1);
+MUTANT 210:	RLM Commented line 186:	const parts = [firstString.raw[0]];
+MUTANT 211:	RLM Commented line 195:	return template(chalk, parts.join(''));
+MUTANT 212:	RLM Commented line 198:	Object.defineProperties(Chalk.prototype, styles);
+MUTANT 213:	RLM Commented line 201:	module.exports.supportsColor = stdoutColor;
+MUTANT 214:	RLM Commented line 202:	module.exports.default = module.exports; // For TypeScript
+MUTANT 215:	ROPM index.js Line 4:	`const {stdout: stdoutColor} = require('supports-color');` > `const {} = require('supports-color');'`
+MUTANT 216:	ROPM index.js Line 83:	`const {level} = this;` > `const {} = this;'`
+MUTANT 217:	ROPM index.js Line 87:	`open,` > `'`
+MUTANT 218:	ROPM index.js Line 88:	`close: ansiStyles.color.close,` > `'`
+MUTANT 219:	ROPM index.js Line 89:	`closeRe: ansiStyles.color.closeRe` > `'`
+MUTANT 220:	ROPM index.js Line 106:	`const {level} = this;` > `const {} = this;'`
+MUTANT 221:	ROPM index.js Line 110:	`open,` > `'`
+MUTANT 222:	ROPM index.js Line 111:	`close: ansiStyles.bgColor.close,` > `'`
+MUTANT 223:	ROPM index.js Line 112:	`closeRe: ansiStyles.bgColor.closeRe` > `'`
+MUTANT 224:	ROPM index.js Line 128:	`enumerable: true,` > `'`
+MUTANT 225:	ROPM index.js Line 138:	`enumerable: true,` > `'`
+MUTANT 226:	SLM index.js Line 9:	`'ansi',` > `'','`
+MUTANT 227:	SLM index.js Line 9:	`'ansi',` > `'uonB','`
+MUTANT 228:	SLM index.js Line 10:	`'ansi',` > `'','`
+MUTANT 229:	SLM index.js Line 10:	`'ansi',` > `'rer5','`
+MUTANT 230:	SLM index.js Line 11:	`'ansi256',` > `'','`
+MUTANT 231:	SLM index.js Line 11:	`'ansi256',` > `'A9xmXan','`
+MUTANT 232:	SLM index.js Line 12:	`'ansi16m'` > `'''`
+MUTANT 233:	SLM index.js Line 12:	`'ansi16m'` > `'TixIDvC''`
+MUTANT 234:	SLM index.js Line 16:	`const skipModels = new Set(['gray']);` > `const skipModels = new Set(['']);'`
+MUTANT 235:	SLM index.js Line 16:	`const skipModels = new Set(['gray']);` > `const skipModels = new Set(['It7R']);'`
+MUTANT 236:	SLM index.js Line 22:	`throw new Error('The `level` option should be an integer from 0 to 3');` > `throw new Error('');'`
+MUTANT 237:	SLM index.js Line 22:	`throw new Error('The `level` option should be an integer from 0 to 3');` > `throw new Error('Da57DRai0TRCyp1TePB9MaFLbyvxgETapCgzTJaeJlWeKQ15VrS');'`
+MUTANT 238:	SLM index.js Line 28:	`object.enabled = 'enabled' in options ? options.enabled : object.level > 0;` > `object.enabled = '' in options ? options.enabled : object.level > 0;'`
+MUTANT 239:	SLM index.js Line 28:	`object.enabled = 'enabled' in options ? options.enabled : object.level > 0;` > `object.enabled = 'x1X8kkL' in options ? options.enabled : object.level > 0;'`
+MUTANT 240:	SLM index.js Line 47:	`throw new Error('`chalk.constructor()` is deprecated. Use `new chalk.Instance()` instead.');` > `throw new Error('');'`
+MUTANT 241:	SLM index.js Line 47:	`throw new Error('`chalk.constructor()` is deprecated. Use `new chalk.Instance()` instead.');` > `throw new Error('bAbNJJHKQm97eRrPCLfxy0TZLslFUOwmZolwu9sLZWBTMI5zqqVt5lDqfTzuFF1pEqTCNPpy');'`
+MUTANT 242:	SLM index.js Line 60:	`style.closeRe = new RegExp(escapeStringRegexp(style.close), 'g');` > `style.closeRe = new RegExp(escapeStringRegexp(style.close), '');'`
+MUTANT 243:	SLM index.js Line 60:	`style.closeRe = new RegExp(escapeStringRegexp(style.close), 'g');` > `style.closeRe = new RegExp(escapeStringRegexp(style.close), 'U');'`
+MUTANT 244:	SLM index.js Line 75:	`ansiStyles.color.closeRe = new RegExp(escapeStringRegexp(ansiStyles.color.close), 'g');` > `ansiStyles.color.closeRe = new RegExp(escapeStringRegexp(ansiStyles.color.close), '');'`
+MUTANT 245:	SLM index.js Line 75:	`ansiStyles.color.closeRe = new RegExp(escapeStringRegexp(ansiStyles.color.close), 'g');` > `ansiStyles.color.closeRe = new RegExp(escapeStringRegexp(ansiStyles.color.close), 'q');'`
+MUTANT 246:	SLM index.js Line 97:	`ansiStyles.bgColor.closeRe = new RegExp(escapeStringRegexp(ansiStyles.bgColor.close), 'g');` > `ansiStyles.bgColor.closeRe = new RegExp(escapeStringRegexp(ansiStyles.bgColor.close), '');'`
+MUTANT 247:	SLM index.js Line 97:	`ansiStyles.bgColor.closeRe = new RegExp(escapeStringRegexp(ansiStyles.bgColor.close), 'g');` > `ansiStyles.bgColor.closeRe = new RegExp(escapeStringRegexp(ansiStyles.bgColor.close), 'I');'`
+MUTANT 248:	SLM index.js Line 103:	`const bgModel = 'bg' + model[0].toUpperCase() + model.slice(1);` > `const bgModel = '' + model[0].toUpperCase() + model.slice(1);'`
+MUTANT 249:	SLM index.js Line 103:	`const bgModel = 'bg' + model[0].toUpperCase() + model.slice(1);` > `const bgModel = '8O' + model[0].toUpperCase() + model.slice(1);'`
+MUTANT 250:	SLM index.js Line 127:	`Object.defineProperty(builder, 'level', {` > `Object.defineProperty(builder, '', {'`
+MUTANT 251:	SLM index.js Line 127:	`Object.defineProperty(builder, 'level', {` > `Object.defineProperty(builder, 'IIAsE', {'`
+MUTANT 252:	SLM index.js Line 137:	`Object.defineProperty(builder, 'enabled', {` > `Object.defineProperty(builder, '', {'`
+MUTANT 253:	SLM index.js Line 137:	`Object.defineProperty(builder, 'enabled', {` > `Object.defineProperty(builder, 'eibOIsK', {'`
+MUTANT 254:	SLM index.js Line 155:	`let string = arguments_.join(' ');` > `let string = arguments_.join('');'`
+MUTANT 255:	SLM index.js Line 155:	`let string = arguments_.join(' ');` > `let string = arguments_.join('a');'`
+MUTANT 256:	SLM index.js Line 158:	`return self._isEmpty ? '' : string;` > `return self._isEmpty ? 'wpqJVSBZuX' : string;'`
+MUTANT 257:	SLM index.js Line 182:	`return strings.join(' ');` > `return strings.join('');'`
+MUTANT 258:	SLM index.js Line 182:	`return strings.join(' ');` > `return strings.join('N');'`
+MUTANT 259:	SLM index.js Line 190:	`String(arguments_[i - 1]).replace(/[{}\\]/g, '\\$&'),` > `String(arguments_[i - 1]).replace(/[{}\\]/g, '\'),'`
+MUTANT 260:	SLM index.js Line 190:	`String(arguments_[i - 1]).replace(/[{}\\]/g, '\\$&'),` > `String(arguments_[i - 1]).replace(/[{}\\]/g, 'fyn'),'`
+MUTANT 261:	SLM index.js Line 195:	`return template(chalk, parts.join(''));` > `return template(chalk, parts.join('TknCs9pWv6'));'`

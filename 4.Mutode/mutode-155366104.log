@@ -1,0 +1,150 @@
+Mutode 155366104 running
+Creating a copy of your module... Done
+Loading mutators... Done
+Verifying and timing your test suite
+Took 27.65 seconds to run full test suite
+Running mutants for index.js
+MUTANT 1:	BLM Line 71:	return createBuilder(this, this._styles || [], truefalse);...	killed 15352 ms
+MUTANT 2:	BLM Line 128:	enumerable: truefalse,...	survived 20755 ms
+MUTANT 3:	BLM Line 138:	enumerable: truefalse,...	survived 19530 ms
+MUTANT 4:	CBM Line 21:	if (options.level >>= 3 || options.level < 0) {	killed 15523 ms
+MUTANT 5:	CBM Line 21:	if (options.level > 3 || options.level <<= 0) {	killed 15751 ms
+MUTANT 6:	CBM Line 28:	object.enabled = 'enabled' in options ? options.enabled : object.level >>= 0;	survived 25581 ms
+MUTANT 7:	CBM Line 157:	if (!self.enabled || self.level <=< 0 || !string) {	killed 16060 ms
+MUTANT 8:	CBM Line 188:	for (let i = 1; i <<= firstString.length; i++) {	killed 17124 ms
+MUTANT 9:	IM Line 188:	for (let i = 1; i < firstString.length; i++)--) {...	killed 4201 ms
+MUTANT 10:	MM Line 103:	const bgModel = 'bg' + model[0].toUpperCase() +- model.slice(1);	killed 19320 ms
+MUTANT 11:	MM Line 103:	const bgModel = 'bg' +- model[0].toUpperCase() + model.slice(1);	killed 21590 ms
+MUTANT 12:	MM Line 165:	string = code.open + string.replace(code.closeRe, code.open) +- code.close;	killed 20505 ms
+MUTANT 13:	MM Line 165:	string = code.open +- string.replace(code.closeRe, code.open) + code.close;	killed 20210 ms
+MUTANT 14:	MM Line 190:	String(arguments_[i -+ 1]).replace(/[{}\\]/g, '\\$&'),	killed 20796 ms
+MUTANT 15:	NCM Line 21:	if (options.level ><= 3 || options.level < 0) {	killed 20014 ms
+MUTANT 16:	NCM Line 21:	if (options.level > 3 || options.level <>= 0) {	killed 19867 ms
+MUTANT 17:	NCM Line 27:	object.level = options.level ===!== undefined ? colorLevel : options.level;	killed 6856 ms
+MUTANT 18:	NCM Line 28:	object.enabled = 'enabled' in options ? options.enabled : object.level ><= 0;	killed 19313 ms
+MUTANT 19:	NCM Line 157:	if (!self.enabled || self.level <=> 0 || !string) {	killed 19192 ms
+MUTANT 20:	NCM Line 188:	for (let i = 1; i <>= firstString.length; i++) {	killed 5932 ms
+MUTANT 21:	NLM Line 21:	if (options.level > 30 || options.level < 0) {...	killed 20300 ms
+MUTANT 22:	NLM Line 21:	if (options.level > 32 || options.level < 0) {...	killed 20252 ms
+MUTANT 23:	NLM Line 21:	if (options.level > 34 || options.level < 0) {...	survived 37581 ms
+MUTANT 24:	NLM Line 21:	if (options.level > 3307094 || options.level < 0) {...	killed 22949 ms
+MUTANT 25:	NLM Line 21:	if (options.level > 3 || options.level < 0-1) {...	killed 23627 ms
+MUTANT 26:	NLM Line 21:	if (options.level > 3 || options.level < 01) {...	killed 24595 ms
+MUTANT 27:	NLM Line 21:	if (options.level > 3 || options.level < 0660084) {...	killed 24901 ms
+MUTANT 28:	NLM Line 26:	const colorLevel = stdoutColor ? stdoutColor.level : 0-1;...	killed 24688 ms
+MUTANT 29:	NLM Line 26:	const colorLevel = stdoutColor ? stdoutColor.level : 01;...	killed 24251 ms
+MUTANT 30:	NLM Line 26:	const colorLevel = stdoutColor ? stdoutColor.level : 0727222;...	killed 22634 ms
+MUTANT 31:	NLM Line 28:	object.enabled = 'enabled' in options ? options.enabled : object.level > 0-1;...	survived 20384 ms
+MUTANT 32:	NLM Line 28:	object.enabled = 'enabled' in options ? options.enabled : object.level > 01;...	killed 16122 ms
+MUTANT 33:	NLM Line 28:	object.enabled = 'enabled' in options ? options.enabled : object.level > 0776237;...	killed 16330 ms
+MUTANT 34:	NLM Line 103:	const bgModel = 'bg' + model[0[-1].toUpperCase() + model.slice(1);...	killed 17274 ms
+MUTANT 35:	NLM Line 103:	const bgModel = 'bg' + model[01].toUpperCase() + model.slice(1);...	killed 13751 ms
+MUTANT 36:	NLM Line 103:	const bgModel = 'bg' + model[0755912].toUpperCase() + model.slice(1);...	killed 12678 ms
+MUTANT 37:	NLM Line 103:	const bgModel = 'bg' + model[0].toUpperCase() + model.slice(10);...	killed 13590 ms
+MUTANT 38:	NLM Line 103:	const bgModel = 'bg' + model[0].toUpperCase() + model.slice(12);...	killed 12985 ms
+MUTANT 39:	NLM Line 103:	const bgModel = 'bg' + model[0].toUpperCase() + model.slice(1176632);...	killed 13142 ms
+MUTANT 40:	NLM Line 157:	if (!self.enabled || self.level <= 0-1 || !string) {...	killed 13438 ms
+MUTANT 41:	NLM Line 157:	if (!self.enabled || self.level <= 01 || !string) {...	killed 13749 ms
+MUTANT 42:	NLM Line 157:	if (!self.enabled || self.level <= 0524971 || !string) {...	killed 21899 ms
+MUTANT 43:	NLM Line 185:	const arguments_ = strings.slice(10);...	killed 18138 ms
+MUTANT 44:	NLM Line 185:	const arguments_ = strings.slice(12);...	killed 39222 ms
+MUTANT 45:	NLM Line 185:	const arguments_ = strings.slice(1637040);...	killed 15347 ms
+MUTANT 46:	NLM Line 186:	const parts = [firstString.raw[0[-1]];...	killed 22622 ms
+MUTANT 47:	NLM Line 186:	const parts = [firstString.raw[01]];...	killed 26914 ms
+MUTANT 48:	NLM Line 186:	const parts = [firstString.raw[0874898]];...	killed 23642 ms
+MUTANT 49:	NLM Line 188:	for (let i = 10; i < firstString.length; i++) {...	killed 17781 ms
+MUTANT 50:	NLM Line 188:	for (let i = 12; i < firstString.length; i++) {...	killed 19135 ms
+MUTANT 51:	NLM Line 188:	for (let i = 1850585; i < firstString.length; i++) {...	killed 26044 ms
+MUTANT 52:	NLM Line 190:	String(arguments_[i - 10]).replace(/[{}\\]/g, '\\$&'),...	killed 35938 ms
+MUTANT 53:	NLM Line 190:	String(arguments_[i - 12]).replace(/[{}\\]/g, '\\$&'),...	killed 25223 ms
+MUTANT 54:	NLM Line 190:	String(arguments_[i - 1215256]).replace(/[{}\\]/g, '\\$&'),...	killed 15604 ms
+MUTANT 55:	RAEM Line 9:	'ansi',	killed 4347 ms
+MUTANT 56:	RAEM Line 10:	'ansi',	killed 4177 ms
+MUTANT 57:	RAEM Line 11:	'ansi256',	killed 4450 ms
+MUTANT 58:	RAEM Line 12:	'ansi16m'	killed 5781 ms
+MUTANT 59:	RAEM Line 16:	const skipModels = new Set(['gray']);([]);	survived 36900 ms
+MUTANT 60:	RAEM Line 64:	return createBuilder(this, [...(this._styles || []), [style], this._isEmpty);	killed 18348 ms
+MUTANT 61:	RAEM Line 64:	return createBuilder(this, [...(this._styles || []),[])], style], this._isEmpty);	killed 19305 ms
+MUTANT 62:	RAEM Line 91:	return createBuilder(this, [...(this._styles || []), [codes], this._isEmpty);	killed 17409 ms
+MUTANT 63:	RAEM Line 91:	return createBuilder(this, [...(this._styles || []),[])], codes], this._isEmpty);	killed 6826 ms
+MUTANT 64:	RAEM Line 114:	return createBuilder(this, [...(this._styles || []), [codes], this._isEmpty);	killed 16798 ms
+MUTANT 65:	RAEM Line 114:	return createBuilder(this, [...(this._styles || []),[])], codes], this._isEmpty);	killed 4109 ms
+MUTANT 66:	RAEM Line 186:	const parts = [firstString.raw[0]];[];	killed 14926 ms
+MUTANT 67:	RCM Line 27:	object.level = options.leveltrue === undefined ? colorLevel : options.level;	killed 4176 ms
+MUTANT 68:	RCM Line 27:	object.level = options.levelfalse === undefined ? colorLevel : options.level;	killed 4433 ms
+MUTANT 69:	RFCAM Line 2:	const escapeStringRegexp = require('escape-string-regexp');();	killed 4162 ms
+MUTANT 70:	RFCAM Line 3:	const ansiStyles = require('ansi-styles');();	killed 4007 ms
+MUTANT 71:	RFCAM Line 4:	const {stdout: stdoutColor} = require('supports-color');();	killed 4026 ms
+MUTANT 72:	RFCAM Line 5:	const template = require('./templates.js');();	killed 4037 ms
+MUTANT 73:	RFCAM Line 18:	const styles = Object.create(null);();	killed 12875 ms
+MUTANT 74:	RFCAM Line 33:	return chalkFactory(options);();	killed 5124 ms
+MUTANT 75:	RFCAM Line 39:	applyOptions(chalk, options);	killed 13260 ms
+MUTANT 76:	RFCAM Line 39:	applyOptions(chalk, options);	killed 4079 ms
+MUTANT 77:	RFCAM Line 41:	chalk.template = (...arguments_) => chalkTag(chalk.template, ...(...arguments_);	killed 14035 ms
+MUTANT 78:	RFCAM Line 41:	chalk.template = (...arguments_) => chalkTag(chalk.template, ...arguments_);	killed 4303 ms
+MUTANT 79:	RFCAM Line 43:	Object.setPrototypeOf(chalk, Chalk.prototype);	killed 12817 ms
+MUTANT 80:	RFCAM Line 43:	Object.setPrototypeOf(chalk, Chalk.prototype);	killed 13224 ms
+MUTANT 81:	RFCAM Line 44:	Object.setPrototypeOf(chalk.template, chalk);	killed 19199 ms
+MUTANT 82:	RFCAM Line 44:	Object.setPrototypeOf(chalk.template, chalk);	killed 20576 ms
+MUTANT 83:	RFCAM Line 56:	return chalkFactory(options);();	killed 5898 ms
+MUTANT 84:	RFCAM Line 59:	for (const [styleName, style] of Object.entries(ansiStyles))()) {	killed 13155 ms
+MUTANT 85:	RFCAM Line 60:	style.closeRe = new RegExp(escapeStringRegexp(style.close),(), 'g');	killed 13890 ms
+MUTANT 86:	RFCAM Line 64:	return createBuilder(([...(this, [...(this._styles || []), style], this._isEmpty);	killed 15487 ms
+MUTANT 87:	RFCAM Line 64:	return createBuilder(this, [...(this._styles || []), style], this._isEmpty);	killed 20671 ms
+MUTANT 88:	RFCAM Line 64:	return createBuilder(this, [...(this._styles || []), style], this._isEmpty);]);	killed 13493 ms
+MUTANT 89:	RFCAM Line 71:	return createBuilder(this, this._styles || [], true);	killed 13423 ms
+MUTANT 90:	RFCAM Line 71:	return createBuilder(this, this._styles || [], true);	killed 13535 ms
+MUTANT 91:	RFCAM Line 71:	return createBuilder(this, this._styles || [], true);[]);	killed 13347 ms
+MUTANT 92:	RFCAM Line 75:	ansiStyles.color.closeRe = new RegExp(escapeStringRegexp(ansiStyles.color.close),(), 'g');	killed 12447 ms
+MUTANT 93:	RFCAM Line 76:	for (const model of Object.keys(ansiStyles.color.ansi))()) {	killed 12220 ms
+MUTANT 94:	RFCAM Line 77:	if (skipModels.has(model))()) {	survived 25513 ms
+MUTANT 95:	RFCAM Line 85:	const open = ansiStyles.color[levelMapping[level]][model](...arguments_);]();	killed 4295 ms
+MUTANT 96:	RFCAM Line 91:	return createBuilder(([...(this, [...(this._styles || []), codes], this._isEmpty);	killed 15513 ms
+MUTANT 97:	RFCAM Line 91:	return createBuilder(this, [...(this._styles || []), codes], this._isEmpty);	killed 5059 ms
+MUTANT 98:	RFCAM Line 91:	return createBuilder(this, [...(this._styles || []), codes], this._isEmpty);]);	survived 19616 ms
+MUTANT 99:	RFCAM Line 97:	ansiStyles.bgColor.closeRe = new RegExp(escapeStringRegexp(ansiStyles.bgColor.close),(), 'g');	killed 14236 ms
+MUTANT 100:	RFCAM Line 98:	for (const model of Object.keys(ansiStyles.bgColor.ansi))()) {	killed 15309 ms
+MUTANT 101:	RFCAM Line 99:	if (skipModels.has(model))()) {	survived 20966 ms
+MUTANT 102:	RFCAM Line 103:	const bgModel = 'bg' + model[0].toUpperCase() + model.slice(1);();	killed 16092 ms
+MUTANT 103:	RFCAM Line 108:	const open = ansiStyles.bgColor[levelMapping[level]][model](...arguments_);]();	killed 4810 ms
+MUTANT 104:	RFCAM Line 114:	return createBuilder(([...(this, [...(this._styles || []), codes], this._isEmpty);	killed 15451 ms
+MUTANT 105:	RFCAM Line 114:	return createBuilder(this, [...(this._styles || []), codes], this._isEmpty);	killed 4801 ms
+MUTANT 106:	RFCAM Line 114:	return createBuilder(this, [...(this._styles || []), codes], this._isEmpty);]);	survived 19894 ms
+MUTANT 107:	RFCAM Line 120:	const proto = Object.defineProperties(() => {}, (styles);	killed 14185 ms
+MUTANT 108:	RFCAM Line 120:	const proto = Object.defineProperties(() => {}, styles);{});	killed 20015 ms
+MUTANT 109:	RFCAM Line 123:	const builder = (...arguments_) => applyStyle(builder, ...(...arguments_);	killed 16649 ms
+MUTANT 110:	RFCAM Line 123:	const builder = (...arguments_) => applyStyle(builder, ...arguments_);	killed 5092 ms
+MUTANT 111:	RFCAM Line 127:	Object.defineProperty(builder, '('level', {	killed 16142 ms
+MUTANT 112:	RFCAM Line 127:	Object.defineProperty(builder, 'level', {	killed 17039 ms
+MUTANT 113:	RFCAM Line 127:	Object.defineProperty(builder, 'level'bject.defineProperty(builder, 'level', {	killed 5284 ms
+MUTANT 114:	RFCAM Line 137:	Object.defineProperty(builder, '('enabled', {	killed 22012 ms
+MUTANT 115:	RFCAM Line 137:	Object.defineProperty(builder, 'enabled', {	killed 44186 ms
+MUTANT 116:	ROPM Line 28:	level,	killed 1795 ms
+MUTANT 117:	ROPM Line 29:	hasBasic: true,	killed 1864 ms
+MUTANT 118:	ROPM Line 30:	has256: level >= 2,	killed 2019 ms
+MUTANT 119:	ROPM Line 31:	has16m: level >= 3	killed 2046 ms
+MUTANT 120:	ROPM Line 132:	supportsColor: getSupportLevel,	killed 1941 ms
+MUTANT 121:	ROPM Line 133:	stdout: getSupportLevel(process.stdout),	killed 1797 ms
+MUTANT 122:	ROPM Line 134:	stderr: getSupportLevel(process.stderr)	killed 2019 ms
+MUTANT 123:	RSCM Lines 99-100: Commented case 'iTerm.app'	killed 1899 ms
+MUTANT 124:	RSCM Lines 101-102: Commented case 'Apple_Terminal'	killed 1758 ms
+MUTANT 125:	RVM Line 24:	return falsetrue;...	killed 3042 ms
+MUTANT 126:	RVM Line 37:	return 01;...	killed 3035 ms
+MUTANT 127:	RVM Line 43:	return 30;...	killed 2886 ms
+MUTANT 128:	RVM Line 47:	return 20;...	killed 2871 ms
+MUTANT 129:	RVM Line 53:	return 10;...	survived 2899 ms
+MUTANT 130:	RVM Line 55:	return 01;...	killed 2964 ms
+MUTANT 131:	RVM Line 76:	return 10;...	killed 2924 ms
+MUTANT 132:	RVM Line 81:	return 10;...	killed 2972 ms
+MUTANT 133:	RVM Line 92:	return 30;...	survived 3369 ms
+MUTANT 134:	RVM Line 102:	return 20;...	survived 3220 ms
+MUTANT 135:	RVM Line 108:	return 20;...	killed 3419 ms
+MUTANT 136:	RVM Line 112:	return 10;...	killed 3173 ms
+MUTANT 137:	RVM Line 116:	return 10;...	killed 2897 ms
+MUTANT 138:	SCM Line 99:	case 'iTerm.appzcixgiex':...	killed 2825 ms
+MUTANT 139:	SCM Line 101:	case 'Apple_Terminaljvjucowm':...	survived 2739 ms
+
+Out of 139 mutants, 129 were killed, 10 survived and 0 were discarded
+Mutant coverage: 92.81%
+
+Deleting copies...Done
